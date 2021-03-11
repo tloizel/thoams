@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500;700;900&display=swap');
+body {
+  background: #FFFCF2;
+  color: #252422;
+  font-family: 'Open Sans', sans serif;
+  font-size: 16px;
+  font-weight: regular;
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  color: #D65108;
+  font-size: 64px;
+  font-weight: 900;
+  margin: 16px;
+}
+h2 {
+  color: #D65108;
+  font-size: 24px;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: #0b3c49;
+  font-weight: 400;
+}
+a:hover {
+  color: #252422;
+}
+
+.container {
+  width: 600px;   /* This sets the width */
+  margin: 40px auto; /* This automatically sets left/right margins */
+}
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 600px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.img-circle {
+  border-radius: 20%;
+}
+.card-white {
+  text-align: center;
+  background: white;
+  margin: 40px 0px;
+  padding: 20px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+.btn-green {
+  background-color: #0b3c49;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  margin: 8px;
+  display: inline-block; /* display block défaut taille du parent (n'accepte pas de height ou marges), alors que display inline prend la taille du contenu. Hybride qui accepte les marges. */
+}
+.btn-green:hover {
+  background-color: white;
+  color: #0b3c49;
+  border: 1px solid #0b3c49;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+.list-inline > li {
+  display: inline;
+  padding: 0px 20px;
+  font-size: 24px;
+}
+.list-inline i:hover {
+  color: #D65108;
+}
